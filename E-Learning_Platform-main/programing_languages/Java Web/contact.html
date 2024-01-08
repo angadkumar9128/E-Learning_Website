@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGISTRATTION FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form_style.css">
+
+</head>
+
+<body>
+    <div class="contactus">
+
+        <section>
+            <article>
+
+                <form action="contact.php" method="post">
+
+                    <div>
+                        <h1>REGISTER<span style=" color:red; font-size: 20px;"></span></h1>
+                    </div>
+                    <div>
+                        <label for=" uname">Username*<span style="color:red; font-size: 20px;"></span></label>
+                        <input type="text" id="uname" name="username" placeholder="Enter username"
+                            pattern="^[A-Za-z0-9_]{6,18}$" title="minimum 5 charactor" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email*</label>
+                        <input type="email" id="uname" name="email" placeholder="Enter Email-Id" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$
+                        ">
+                    </div>
+                    <div>
+                        <label for="pword">Password*<span style="color:red; font-size: 20px;"></span></label>
+                        <input type="password" id="pword" name="password" placeholder="Enter password"
+                            pattern="(?=.*[a-z])(?=.*[0-9]).{10,}" title="minimum 10 charactor" required>
+                    </div>
+
+                    <div>
+                        <p style="margin: 32px;">Select Your Gender ?</p><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="unknown" name="gender" value="unknown">
+                        <label for="unknown">Unknown</label>
+
+                    </div>
+
+
+
+                    <div>
+                        <label for="dob">Date_Of_ Birth*<span style="color:red; font-size: 20px;"></span></label>
+                        <input type="date" id="dob" name="date_of_birth" placeholder="Enter date of birth" pattern=""
+                            required>
+                    </div>
+                    <div>
+                        <label for="pno">Contact*<span style="color:red; font-size: 20px;"></span></label>
+                        <input type="contact" id="pno" name="contact" placeholder="Enter contact"
+                            title="length should be 10 " required>
+                    </div>
+                    <div>
+                        <input type="radio" name="cheakbox" id="cheakbox" required>
+                        <label for="cheakbox" class="cheakbox">i hereby accept all the term and conditions <span
+                                style="color:red; font-size: 30px;"></span> </label>
+
+                    </div>
+                    <div class="login">
+                        <button>SignUp</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </div>
+
+</body>
+
+</html>

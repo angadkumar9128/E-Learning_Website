@@ -1,0 +1,198 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li, img, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin: auto;
+    /* Add header styles here */
+}
+
+nav {
+    padding: 0%;
+    /* Add navigation styles here */
+}
+
+.hero-section {
+    margin: auto;
+    /* Add hero section styles here */
+}
+
+.hero-content {
+    margin: auto;
+    /* Add hero content styles here */
+}
+
+.course-section {
+    padding: 1px;
+    /* Add course section styles here */
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.course img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.course h3 {
+    margin-top: 10px;
+}
+
+.course p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.course button {
+    display: block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testimonial-section {
+    margin: 1px;
+    /* Add testimonial section styles here */
+}
+
+.testimonial-container {
+    padding: 0%;
+    margin: 0px;
+    background-color:rgb(247, 241, 238);
+    /* Add testimonial container styles here */
+}
+ 
+
+/* .testimonial-section */
+
+.testimonial-section{
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    
+}
+
+.testimonial-container{
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+
+}
+.testimonial{
+    text-align: center;
+}
+
+
+
+/* Auth section styles */
+.auth-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-form, .registration-form {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Footer styles */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section, .extra-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-section h3, .extra-info h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-section p, .extra-info p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Add additional styles for social media icons (e.g., FontAwesome or other icon fonts) */

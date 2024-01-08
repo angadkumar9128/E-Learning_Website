@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - B.Tech CSE Courses</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .search-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .hero-content {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 6px;
+            animation: slideDown 2s;
+        }
+
+        .header {
+            background-color: #59a805;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            animation: slideDown 3s;
+        }
+
+        .header-02 {
+            background-color: cyan;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            animation: slideDown 5s;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        #courseSearch {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #searchButton {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Add navigation links here -->
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 style="text-align: center; font-size: 35px; background-color: cyan; padding: 10px;">Welcome to
+                E-Learning Web </h1>
+            <!-- <p style="text-align: center; font-size: 25px; padding: 12px;">Learn B.Tech CSE Courses Online</p> -->
+            <!-- Add call-to-action buttons here -->
+        </div>
+    </section>
+
+    <section class="course-section">
+        <h2 class="header"
+            style="text-align: center; font-size: 30px; background-color: cadetblue; padding: 9px; margin-bottom:4px;">
+            B.Tech CSE Courses
+        </h2>
+        <h3 class="header-02"
+            style="text-align: center; font-size: 25px; padding: 8px; margin-bottom: 2px; color:#f10606; margin: 4px;">
+            Here there are
+            various
+            courses provided by us for your service purpose </h3>
+
+
+        <div class="search-bar">
+            <input type="text" id="courseSearch" placeholder="Search for a course...">
+            <button id="searchButton">Search</button>
+        </div>
+
+
+
+        <div class="course-container">
+            <div class="course">
+                <img id="modalCourseImage" src="intro.png" alt="Course 1">
+                <h3>Introduction to Programming</h3>
+                <p>Learn the fundamentals of programming using languages like Python and Java.</p>
+                <button
+                    onclick=" alert('Login yourself! GO to buttom Section of this Page, To get access of this Course!'); window.open('index.html', '_blank')">Enroll
+
+                    <!-- onclick=" alert('Login yourself! To get access of this Course!'); window.open('/webdevlopementproject/E-Learning_Platform-main/contact.html', '_blank')">Enroll -->
+                    Now</button>
+
+            </div>
+
+
+            <div class="course">
+                <img src="data st.jpg" alt="Course 2">
+                <h3>Data Structures and Algorithms</h3>
+                <p>Understand essential data structures and algorithms used in software development.</p>
+                <button
+                    onclick="  alert('Login yourself! GO to buttom Section of this Page, To get access of this Course!'); window.open('courses_home_page/dsa.html', '_blank');">Enroll
+                    Now</button>
+            </div>
+
+            <div class="course">
+                <img src="web dev.jpg" alt="Course 3">
+                <h3>Web Development</h3>
+                <p>Learn to build interactive and dynamic websites using HTML, CSS, and JavaScript.</p>
+                <button
+                    onclick=" alert('Login yourself! GO to buttom Section of this Page, To get access of this Course!'); window.open('courses_home_page/web_dev.html', '_blank')">Enroll
+                    Now</button>
+            </div>
+            <div class="course">
+                <img src="cloud.jpeg" alt="Course 4">
+                <h3>Cloud Computing</h3>
+                <p>
+                    <b>Description:</b> Explores cloud technologies and their use in scalable, on-demand computing
+                    services. <br>
+                    <b>Course Content:</b> Cloud architecture, virtualization, deployment models, and security. <br>
+                    <b> Benefits: </b>Equips students with skills to work with cloud platforms and services. <br>
+                    <b> Real-Life Use:</b> Widely used for hosting web applications and managing big data.
+                </p>
+                <button
+                    onclick=" alert('Login yourself! GO to buttom Section of this Page, To get access of this Course!'); window.open('courses_home_page/cloud_comp.html', '_blank')">Enroll
+                    Now</button>
+            </div>
+            <div class="course">
+                <img src="softw.jpeg" alt="Course 5">
+                <h3>Software Engineering</h3>
+                <p>
+                    Description: Focuses on the software development life cycle, methodologies, and best practices. <br>
+                    Course Content: Requirements gathering, design patterns, testing, and project management. <br>
+                    Benefits: Teaches techniques to build high-quality, maintainable software products. <br>
+                    Real-Life Use: Followed to develop large-scale software projects in various industries.
+                </p>
+                <button
+                    onclick=" alert('Login yourself! GO to buttom Section of this Page, To get access of this Course!'); window.open('courses_home_page.html', '_blank')">Enroll
+                    Now</button>
+            </div>
+            <div class="course">
+                <img src="cyber.avif" alt="Course 6">
+                <h3>Cybersecurity</h3>
+                <p>
+                    Description: Covers the principles of securing computer systems and networks from cyber threats.
+                    <br>
+                    Course Content: Cryptography, network security, ethical hacking, and risk management. <br>
+                    Benefits: Prepares students to protect information and systems from cyber attacks. <br>
+                    Real-Life Use: Vital in safeguarding sensitive data and preventing cybercrimes.
+                </p>
+                <button onclick="window.open('courses_home_page/cybersecurity.html', '_blank')">Enroll Now</button>
+            </div>
+            <div class="course">
+                <img src="ai.jpeg" alt="Course 7">
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Description: Explores the theory and applications of artificial intelligence. <br>
+                    Course Content: Knowledge representation, reasoning, planning, and expert systems. <br>
+                    Benefits: Provides an understanding of AI technologies and their potential impact. <br>
+                    Real-Life Use: Used in developing smart systems, chatbots, and autonomous vehicles.
+                </p>
+                <button onclick="window.open('courses_home_page/web_dev.html', '_blank')">Enroll Now</button>
+            </div>
+            <div class="course">
+                <img src="operat.jpeg" alt="Course 8">
+                <h3> Operating Systems</h3>
+                <p>
+                    Description: Explores the fundamentals of operating systems and how they manage hardware and
+                    software resources. <br>
+                    Course Content: Process management, memory management, file systems, and concurrency. <br>
+                    Benefits: Helps students understand how computer systems function at a fundamental level. <br>
+                    Real-Life Use: Used in designing, developing, and maintaining operating systems.
+                </p>
+                <button onclick="window.open('courses_home_page/web_dev.html', '_blank')">Enroll Now</button>
+            </div>
+            <div class="course">
+                <img src="machine.jpeg" alt="Course 9">
+                <h3> Machine Learning</h3>
+                <p>
+                    Description: Introduces machine learning concepts, algorithms, and applications. <br>
+                    Course Content: Supervised and unsupervised learning, neural networks, and model evaluation. <br>
+                    Benefits: Equips students with skills to develop AI-powered solutions and predictive models. <br>
+                    Real-Life Use: Applied in areas like image recognition, natural language processing, and
+                    recommendation systems.
+                </p>
+                <button onclick="window.open('courses_home_page/web_dev.html', '_blank')">Enroll Now</button>
+            </div>
+            <div class="course">
+                <img src="dbms.jpeg" alt="Course 9">
+                <h3> Database Management Systems </h3>
+                <p>
+                    Description: Covers the principles of database design, querying, and management. <br>
+                    Course Content: Relational database concepts, SQL, normalization, and database administration. <br>
+                    Benefits: Provides the knowledge needed to create and manage databases efficiently. <br>
+                    Real-Life Use: Crucial for businesses to store, manage, and retrieve large volumes of data.
+                </p>
+                <button>Enroll Now</button>
+            </div>
+
+            <!-- Add more courses here -->
+
+        </div>
+    </section>
+
+    <!-- testimonial-section -->
+
+    <section class="testimonial-section">
+        <h2 style="text-align: center; font-size: 28px; color: #007BFF; background-color:aqua; padding: 20px;">What Our
+            Students Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="st_01.jpeg" alt="Student 1">
+                <h3> Harish Kumar</h3> <br>
+                <p>"The programming course was outstanding! The instructors explained complex concepts in a simple
+                    manner, making it easy to understand. The hands-on projects helped me gain confidence in my coding
+                    skills."</p>
+            </div><br>
+
+            <div class="testimonial">
+                <img src="st_02.jpeg" alt="Student 2">
+                <h3>sonu Smith</h3> <br>
+                <p>"I took the machine learning course, and it was mind-blowing! The course materials were
+                    comprehensive, and the practical exercises challenged me to build real-world applications. Now, I'm
+                    confidently working on ML projects."</p>
+            </div><br>
+
+            <div class="testimonial">
+                <img src="st_03.jpeg" alt="Student 3">
+                <h3>Rakesh Ranjan</h3> <br>
+                <p>"The web development course exceeded my expectations. The instructors were knowledgeable and
+                    supportive. I enjoyed the interactive sessions, and the projects helped me create a portfolio to
+                    showcase my work to potential employers."</p>
+            </div>
+
+            <!-- Add more testimonials here -->
+        </div>
+    </section>
+
+
+    <!-- form section  -->
+
+    <section class="auth-section">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm" action="course_login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" name="email" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="registration-form">
+            <h2>Register</h2>
+            <form id="registrationForm" action="course_registration.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullname" id="fullName" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- footer section  -->
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p>Email: kumarangad9498@gmail.com</p>
+                <p>Phone: 9128949854</p>
+                <p>Address: Uthupalayam , Avinashi road, Coimbatore,TamilNadu </p>
+            </div>
+            <div class="extra-info">
+                <h3>Extra Information</h3>
+                <p>About Us: This wesite is being devloped for education purpose and we want or our motive to serve
+                    those student who are feeling difficult in learnig computer education.</p>
+                <p>Privacy Policy: This content is secured and managed by privacy policy.</p>
+                <p>Terms of Service: Read our term and condition or Contact us by using above contact.</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <!-- Add social media icons or links here -->
+        </div>
+    </footer>
+
+    <!-- footer section end  -->
+
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const courseSearch = document.getElementById('courseSearch');
+            const searchButton = document.getElementById('searchButton');
+            const courseContainers = document.querySelectorAll('.course');
+
+            function filterCourses() {
+                const searchTerm = courseSearch.value.toLowerCase();
+
+                courseContainers.forEach(courseContainer => {
+                    const courseName = courseContainer.querySelector('h3').textContent.toLowerCase();
+                    const courseDescription = courseContainer.querySelector('p').textContent.toLowerCase();
+
+                    if (courseName.includes(searchTerm) || courseDescription.includes(searchTerm)) {
+                        courseContainer.style.display = 'block';
+                    } else {
+                        courseContainer.style.display = 'none';
+                    }
+                });
+            }
+
+            courseSearch.addEventListener('input', filterCourses);
+
+            searchButton.addEventListener('click', function () {
+                filterCourses();
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

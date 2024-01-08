@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="contact.css">
+    <!---we had linked our css file----->
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+
+    <div class="form-box">
+        <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+        </div>
+        <form action="login.php" method="post" id='login' class='input-group-login'>
+            <input type='text' class='input-field' name="email" placeholder='Email Id' required>
+            <input type='password' class='input-field' name="password" placeholder='Enter Password ( min 8 charactor ).' required>
+            <input type='checkbox' class='check-box'><span>Remember Password</span>
+            <button type='submit' name="submit" class='submit-btn'>Log in</button>
+        </form>
+        <form action="register.php" method="post" id='register' class='input-group-register'>
+            <input type='text' class='input-field' name="first_name" placeholder='First Name' required>
+            <input type='text' class='input-field' name="last_name" placeholder='Last Name ' required>
+            <input type='email' class='input-field' name="email" placeholder='Email Id' required>
+            <input type='password' class='input-field' name="password" placeholder='Enter Password ( min 8 charactor ).' required>
+            <input type='password' class='input-field' name="cpassword" placeholder='Confirm Password' required>
+            <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span> <br>
+            <button type='submit' name="submit" class='submit-btn'>Register</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

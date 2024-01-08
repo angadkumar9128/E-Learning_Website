@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        button{
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color: #0056b3;
+
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: -44px;
+        }
+        
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* CSS Animation */
+        input[type="submit"] {
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <form action="upload_book.php" method="post" enctype="multipart/form-data">
+        <label for="pdfFile">PDF File:</label>
+        <input type="file" name="pdfFile" id="pdfFile" accept=".pdf" required>
+
+        <label for="writerName">Writer Name:</label>
+        <input type="text" name="writerName" id="writerName" required>
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" required></textarea>
+
+        <div style="display: flex; justify-content:space-around">
+            <input type="submit" value="Upload Book PDF">
+            <button id="goToLibraryButton" >Go to Library</button>        </div>
+    
+    </form>
+
+    <script>
+        // Add a click event listener for the "Go to Library" button
+        document.getElementById('goToLibraryButton').addEventListener('click', function() {
+            // Redirect to the library.html page when the button is clicked
+            window.location.href = 'display_books.php';
+        });
+    </script>
+
+</body>
+</html>
